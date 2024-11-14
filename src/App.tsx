@@ -3,11 +3,15 @@ import './App.css'
 
 function App() {
 
-
   // 1 - variaveis
-  const name: string = "Matheus";
-  const age: number = 30;
+  const name: string = "Daniel";
+  const age: number = 20;
   const isWorking: boolean = true;
+
+  // 2 - funcções
+  const userGreeting = (name: string): string => {
+    return `Olá, ${name}`
+  }
 
   return (
     <>
@@ -17,6 +21,7 @@ function App() {
     {isWorking && (
       <p>Está trabalhando</p>
     )}
+    <h3>{userGreeting(name)}</h3>
 
     </>
   )
