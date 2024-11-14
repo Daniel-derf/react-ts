@@ -2,6 +2,9 @@ import { useState } from 'react'
 import './App.css'
 import FirstComponent from './components/FirstComponent';
 
+// state
+import State from './components/State';
+
 function App() {
 
   // 1 - variaveis
@@ -14,6 +17,7 @@ function App() {
     return `Olá, ${name}`
   }
 
+
   return (
     <>
     <h1>TypeScript com React</h1>
@@ -24,6 +28,7 @@ function App() {
     )}
     <h3>{userGreeting(name)}</h3>
     <FirstComponent/>
+    <State/>
     </>
   )
 }
